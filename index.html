@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wanna Play a Game?</title>
+  <title>Saw Escape Room</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Fjalla+One&display=swap" rel="stylesheet">
@@ -14,11 +14,25 @@
 <body>
   <!-- Page Content -->
   <header>
-    <h1 class="fjalla-one-regular">Do you want to play a game?</h1>
+    <div class="container">
+        <h1>Do you want to play a game?</h1>
+    </div>
   </header>
   <main>
-    <p>If you win, you can go and be free...if not, well...</p>
+    <h2>If you win, you can go and be free...if you lose, well...</h2>
+    
     <img src="CSS/images/saw.jpeg" class="saw-image" alt="Saw Image">
+    
+    <div id="rules-popup" class="popup">
+        <h2>Welcome! Here are the rules:</h2>
+        <ul>
+          <li>You have three chances to win against the computer in Rock, Paper, Scissors.</li>
+          <li>If you choose not to play, you must answer riddles to escape.</li>
+        </ul>
+        <button id="yes-play">"Yes, let’s play!"</button>
+        <button id="no-escape">"No, I want to escape!"</button>
+    </div>
+
   </main>
 
   <!-- Link to external JavaScript file -->

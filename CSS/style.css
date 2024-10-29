@@ -1,25 +1,43 @@
-*{
-    background-color:rgb(15, 15, 15);
+* {
+    background-color:rgb(22, 15, 15);
 }
+
 header{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: stretch;
     background-color:rgb(1, 1, 1);
     padding: 0px;
     text-align: center;
     font-size: 20px;
     font-family: Arial;
+    width: fit-content;
 }
 
-h1{
-    color:rgb(185, 110, 110);
+.container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 30vw; /* Makes container full viewport height */
+    width: 100vw;
+}
+
+h1 {
+    color:rgb(211, 62, 62);
+    font-size: 100px;
+    font-family: Arial;
+    font-family: "Fjalla One", sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(225, 163, 163, 0.2);
+    text-shadow: 2px 2px 4px rgba(249, 244, 244, 0.2);
+    padding: 0px;
+}
+
+h2 {
+    color:rgb(151, 71, 71);
     font-size:50px;
-    font-family:Arial;
+    font-family: Arial;
+    font-family: "Fjalla One", sans-serif;
     text-align:center;
+    box-shadow: 0 4px 8px 0 rgba(225, 163, 163, 0.2);
+    text-shadow: 2px 2px 4px rgba(174, 159, 159, 0.2);
 }
 
 .fjalla-one-regular {
@@ -38,27 +56,123 @@ h1{
   }
 
   img {
-    width: 100%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+    width: 50vw;
+    margin: auto;
+  }
+  
+p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    color:rgb(125, 15, 15);
+    padding: 0px;
+    font-size: 50px;
+    font-family:Arial;
+    text-align:center;
+    text-shadow: 2px 2px 4px rgba(22, 13, 13, 0.2);
+}
+
+ul {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     align-items: center;
-    opacity: 0.5;
-  }
-  
-p{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    justify-content: space-evenly;
-    align-items: center;
-    color:rgb(125, 15, 15);
+    color:rgb(185, 176, 176);
     padding: 20px;
-    font-size: 50px;
-    font-family:Arial;
-    text-align:center;
+    box-shadow: 0 4px 8px 0 rgba(171, 99, 99, 0.2);
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 2px 2px 4px rgba(249, 244, 244, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(135, 129, 129, 0.2);
+    background-color:rgb(32, 29, 29);
 }
+
+button {
+    align-content: space-between;
+}
+
+#yes-play {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(96, 46, 46);
+    color: rgb(230, 224, 224);
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    border: 50px;
+    margin: auto;
+    }
+    
+    #yes-play:hover {
+        background-color: rgb(86, 56, 56);
+        color: rgb(0, 0, 0);
+    }
+
+    #no-escape {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(96, 46, 46);
+        color: rgb(211, 195, 195);
+        padding: 10px;
+        font-size: 20px;
+        font-family: Arial;
+        border: 50px;
+        margin: auto;
+        }
+        
+        #no-escape:hover {
+            background-color: rgb(86, 56, 56);
+            color: rgb(0, 0, 0);
+        }
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    header {
+      padding: 0;
+      min-height: 150px;
+    }
+  
+    h1 {
+      font-size: 80px;
+    }
+  
+    h2, p {
+      font-size: 40px;
+      min-height: 150px;
+    }
+  
+    ul {
+      min-height: 150px;
+    }
+  
+    img.saw-image {
+      opacity: 0.1;
+      width: 40%;
+    }
+  
+    #yes-play, #no-escape {
+      min-height: 150px;
+    }
+  }
