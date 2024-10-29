@@ -48,4 +48,7 @@ function playGame() {
   );
 }
 
-playGame();
+// Run playGame() only after the page has loaded
+window.onload = function() {
+  setTimeout(playGame, 10000);
+};
